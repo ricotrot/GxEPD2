@@ -304,11 +304,11 @@ void GxEPD2_420c::powerOff()
 void GxEPD2_420c::hibernate()
 {
   _PowerOff();
-  if (_rst >= 0)
+  if (true) //_rst >= 0
   {
     _writeCommand(0x07); // deep sleep
     _writeData(0xA5);    // check code
-    _hibernating = true;
+    //_hibernating = true;
   }
 }
 

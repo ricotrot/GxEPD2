@@ -29,8 +29,8 @@ class GxEPD2_750c_Z08 : public GxEPD2_EPD
     static const bool hasFastPartialUpdate = false;
     static const uint16_t power_on_time = 150; // ms, e.g. 133421us
     static const uint16_t power_off_time = 30; // ms, e.g. 25362us
-    static const uint16_t full_refresh_time = 18000; // ms, e.g. 17133490us
-    static const uint16_t partial_refresh_time = 18000; // ms, e.g. 17133490us
+    static const uint16_t full_refresh_time = 500; //18000; // ms, e.g. 17133490us
+    static const uint16_t partial_refresh_time = 500; //18000; // ms, e.g. 17133490us
     // constructor
     GxEPD2_750c_Z08(int8_t cs, int8_t dc, int8_t rst, int8_t busy);
     // methods (virtual)
